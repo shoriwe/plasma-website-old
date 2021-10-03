@@ -3,12 +3,12 @@ module plasma-website
 go 1.17
 
 require (
-	github.com/alecthomas/chroma v0.9.2
 	github.com/gomarkdown/markdown v0.0.0-20210918233619-6c1113f12c4a
 	github.com/shoriwe/static v0.0.0-20211003181054-f3b36130c96e
 )
 
 require (
+	github.com/alecthomas/chroma v0.9.2 // indirect
 	github.com/danwakefield/fnmatch v0.0.0-20160403171240-cbb64ac3d964 // indirect
 	github.com/dlclark/regexp2 v1.4.0 // indirect
 	github.com/fsnotify/fsnotify v1.5.1 // indirect
