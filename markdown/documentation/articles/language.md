@@ -7,7 +7,6 @@ In this section you will find documentation about the language itself.
 - [Built-In](/documentation/built-in.html)
     - [Types](/documentation/built-in-types.html)
     - [Functions](/documentation/built-in-functions.html)
-    - [Modules](/documentation/built-in-modules.html)
 - [Operators](/documentation/operators.html)
 - [Indexing](/documentation/indexing.html)
 - [Name selectors](/documentation/name-selectors.html)

@@ -8,8 +8,6 @@
 
 ###### [Functions](/documentation/built-in-functions.html)
 
-###### [Modules](/documentation/built-in-modules.html)
-
 ## [Operators](/documentation/operators.html)
 
 ## [Indexing](/documentation/indexing.html)
