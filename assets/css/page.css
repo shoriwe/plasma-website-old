@@ -19,7 +19,7 @@
     font-family: "Arial Black", serif;
 }
 
-.home-button {
+.blue-button {
     background: #3498db;
     border: 0 solid #2980b9;
     border-radius: 3px;
@@ -27,12 +27,12 @@
     border-right-width: 2px;
 }
 
-.home-button:hover {
+.blue-button:hover {
     border-color: #3498db;
     background: #2980b9;
 }
 
-.playground-button {
+.green-button {
     background: #2ecc71;
     border: 0 solid #27ae60;
     border-radius: 3px;
@@ -40,12 +40,12 @@
     border-right-width: 2px;
 }
 
-.playground-button:hover {
+.green-button:hover {
     border-color: #2ecc71;
     background: #27ae60;
 }
 
-.documentation-button {
+.purple-button {
     background: #9b59b6;
     border: 0 solid #8e44ad;
     border-radius: 3px;
@@ -53,7 +53,7 @@
     border-right-width: 2px;
 }
 
-.documentation-button:hover {
+.purple-button:hover {
     border-color: #9b59b6;
     background: #8e44ad;
 }

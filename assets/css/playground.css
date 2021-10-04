@@ -9,3 +9,11 @@
     width: 100%;
     padding: 2.5vh 2.5vw;
 }
+
+.run-button {
+    padding: 0.5vh 2vw;
+    color: white;
+    font-size: large;
+    font-family: "Arial Black", serif;
+    text-decoration: none;
+}
