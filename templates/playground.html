@@ -1,0 +1,33 @@
+<link href="(( PLAYGROUND_STYLE ))" rel="stylesheet">
+<link href="(( MARKDOWN_STYLE ))" rel="stylesheet">
+<link href="(( PRISM_STYLE ))" rel="stylesheet">
+<link href="(( PRISM_LIVE_STYLE ))" rel="stylesheet">
+
+<div class="playground-container">
+    <div class="playground-part">
+        <article class="markdown-body">
+            <h1>Editor</h1>
+            <label>
+            <textarea class="prism-live language-ruby line-numbers fill prism-live-source"
+                      style="max-height: 50vh; caret-color: rgb(0, 0, 0); font: inherit; font-feature-settings: inherit; font-optical-sizing: inherit; tab-size: inherit; padding-left: 8px;">def hello_world()
+    println("Hello world")
+end
+
+if IsMain
+    hello_world()
+end</textarea>
+            </label>
+        </article>
+    </div>
+    <div class="playground-part">
+        <article class="markdown-body">
+            <h1>Output</h1>
+            <a onclick="run_code()">Run</a>
+            <pre><code></code></pre>
+        </article>
+    </div>
+</div>
+
+
+<script src="(( PRISM_SCRIPT ))?load=ruby"></script>
+<script src="(( PRISM_LIVE_SCRIPT ))?load=ruby"></script>
