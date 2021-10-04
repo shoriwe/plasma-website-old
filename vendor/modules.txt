@@ -25,6 +25,7 @@ github.com/gopherjs/gopherjs/compiler/gopherjspkg
 github.com/gopherjs/gopherjs/compiler/natives
 github.com/gopherjs/gopherjs/compiler/prelude
 github.com/gopherjs/gopherjs/compiler/typesutil
+github.com/gopherjs/gopherjs/js
 # github.com/neelance/astrewrite v0.0.0-20160511093645-99348263ae86
 ## explicit
 github.com/neelance/astrewrite

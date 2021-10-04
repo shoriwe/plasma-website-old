@@ -136,6 +136,10 @@ func main() {
 			if prismLiveURlGetError != nil {
 				return nil, prismLiveURlGetError
 			}
+			playgroundScriptURL, playgroundScriptGetError := e.ScriptURL("playground")
+			if playgroundScriptGetError != nil {
+				return nil, playgroundScriptGetError
+			}
 			playground, playgroundCompileError := e.RenderTemplate("playground.html",
 				map[string]string{
 					"PLAYGROUND_STYLE":  playgroundCssURL,
@@ -144,6 +148,7 @@ func main() {
 					"PRISM_LIVE_STYLE":  prismLiveCssURL,
 					"PRISM_SCRIPT":      prismScriptURL,
 					"PRISM_LIVE_SCRIPT": prismLiveScriptURL,
+					"PLAYGROUND_SCRIPT": playgroundScriptURL,
 				},
 			)
 			if playgroundCompileError != nil {

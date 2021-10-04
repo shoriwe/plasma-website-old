@@ -8,8 +8,8 @@
         <article class="markdown-body">
             <h1>Editor</h1>
             <label>
-            <textarea class="prism-live language-ruby line-numbers fill prism-live-source"
-                      style="max-height: 50vh; caret-color: rgb(0, 0, 0); font: inherit; font-feature-settings: inherit; font-optical-sizing: inherit; tab-size: inherit; padding-left: 8px;">def hello_world()
+            <textarea class="prism-live language-ruby line-numbers fill prism-live-source" id="code_container"
+                      style="caret-color: rgb(0, 0, 0); font: inherit; font-feature-settings: inherit; font-optical-sizing: inherit; tab-size: inherit; padding-left: 8px;">def hello_world()
     println("Hello world")
 end
 
@@ -21,12 +21,15 @@ end</textarea>
     </div>
     <div class="playground-part">
         <article class="markdown-body">
-            <h1>Output <button onclick="run_code()" class="run-button green-button">Run</button></h1>
-            <pre><code></code></pre>
+            <h1>Output
+                <button class="run-button green-button" onclick="run_code()">Run</button>
+            </h1>
+            <pre><code id="output"></code></pre>
         </article>
     </div>
 </div>
 
 
-<script src="(( PRISM_SCRIPT ))?load=ruby"></script>
+<script src="(( PRISM_SCRIPT ))"></script>
 <script src="(( PRISM_LIVE_SCRIPT ))?load=ruby"></script>
+<script src="(( PLAYGROUND_SCRIPT ))"></script>
