@@ -12,7 +12,7 @@ println(example[0]) # Outputs: 1
 ## Tuples
 
 ```ruby
-example = [1, 2, 3]
+example = (1, 2, 3)
 println(example[0]) # Outputs: 1
 ```
 
