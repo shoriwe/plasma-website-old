@@ -51,12 +51,16 @@ func HandlePlayground(e1 *engine.Engine) error {
 			if navigationCssGetError != nil {
 				return nil, navigationCssGetError
 			}
-			return e.RenderTemplate("page.html",
+			renderPlayground, renderError := e.RenderTemplate("page.html",
 				map[string]string{
 					"NAV_STYLE": navigationCssURL,
 					"BODY":      string(playground),
 				},
 			)
+			if renderError != nil {
+				return nil, renderError
+			}
+			return e.MinifyHTML(renderPlayground)
 		},
 	)
 }

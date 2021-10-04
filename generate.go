@@ -48,6 +48,10 @@ func main() {
 	if pathHandleError != nil {
 		HandleError(pathHandleError)
 	}
+	pathHandleError = HandleDocumentation(www)
+	if pathHandleError != nil {
+		HandleError(pathHandleError)
+	}
 
 	generationError := www.Generate(os.Args[1])
 	if generationError != nil {
