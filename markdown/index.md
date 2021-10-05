@@ -12,7 +12,7 @@ go install github.com/shoriwe/gplasma/cmd/plasma@latest
 
 ```ruby
 def hello_world()
-    prinln("Hello world from plasma!")
+    println("Hello world from plasma!")
 end
 
 hello_world()
