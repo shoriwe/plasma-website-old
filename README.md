@@ -1,5 +1,7 @@
 # plasma-website
 
+Static web page generator for the `gplasma` documentation.
+
 ### Build
 
 ```shell
