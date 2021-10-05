@@ -14,11 +14,11 @@ func renderDocumentation(documentationFileName string, e *engine.Engine) ([]byte
 	if documentationCssGetError != nil {
 		return nil, documentationCssGetError
 	}
-	tableOfContents, tableOfContentsRenderError := renderMarkdown(e, "markdown/documentation/table-of-contents.md")
+	tableOfContents, tableOfContentsRenderError := renderMarkdown("markdown/documentation/table-of-contents.md")
 	if tableOfContentsRenderError != nil {
 		return nil, tableOfContentsRenderError
 	}
-	documentation, documentationRenderError := renderMarkdown(e, filepath.Join("markdown/documentation/articles", documentationFileName))
+	documentation, documentationRenderError := renderMarkdown(filepath.Join("markdown/documentation/articles", documentationFileName))
 	if documentationRenderError != nil {
 		return nil, documentationRenderError
 	}

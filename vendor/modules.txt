@@ -42,7 +42,7 @@ github.com/shoriwe/gplasma/pkg/errors
 github.com/shoriwe/gplasma/pkg/reader
 github.com/shoriwe/gplasma/pkg/tools
 github.com/shoriwe/gplasma/pkg/vm
-# github.com/shoriwe/static v0.0.0-20211003181054-f3b36130c96e
+# github.com/shoriwe/static v0.0.0-20211005181959-fb618bbedbe7
 ## explicit; go 1.17
 github.com/shoriwe/static/pkg/engine
 github.com/shoriwe/static/pkg/js/compiler

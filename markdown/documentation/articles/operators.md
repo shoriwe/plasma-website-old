@@ -2,7 +2,7 @@
 
 This means operations with the structure:
 
-```ruby
+```
 LEFT OPERATOR RIGHT
 ```
 
@@ -150,7 +150,7 @@ LEFT OPERATOR RIGHT
 
 This means operations with the structure:
 
-```ruby
+```
 OPERATOR VALUE
 ```
 

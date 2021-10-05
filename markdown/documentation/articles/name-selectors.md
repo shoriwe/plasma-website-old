@@ -4,7 +4,7 @@
 
 This follows the pattern:
 
-```ruby
+```
 EXPRESSION.NAME
 ```
 
@@ -21,7 +21,7 @@ a.ToString()
 
 This follows the pattern:
 
-```ruby
+```
 EXPRESSION.NAME[.NAME[.NAME[...]]]
 ```
 

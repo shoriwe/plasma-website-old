@@ -43,6 +43,8 @@ github.com/shoriwe/static v0.0.0-20211001180818-97868ca58c88 h1:3Mx5eVwu2+nFkNsB
 github.com/shoriwe/static v0.0.0-20211001180818-97868ca58c88/go.mod h1:28Qs6TkTeRYMDd7Vipetea6LKl1j+fcDA4rBEzBWhAU=
 github.com/shoriwe/static v0.0.0-20211003181054-f3b36130c96e h1:kqXG3fJz54su2ziOUj7RqDDPeMEo420VsCAnymlsFOg=
 github.com/shoriwe/static v0.0.0-20211003181054-f3b36130c96e/go.mod h1:28Qs6TkTeRYMDd7Vipetea6LKl1j+fcDA4rBEzBWhAU=
+github.com/shoriwe/static v0.0.0-20211005181959-fb618bbedbe7 h1:aQLesKziFAsatHliYQQxvazbMFjNiDPRFt/KbL9UscQ=
+github.com/shoriwe/static v0.0.0-20211005181959-fb618bbedbe7/go.mod h1:28Qs6TkTeRYMDd7Vipetea6LKl1j+fcDA4rBEzBWhAU=
 github.com/shurcooL/httpfs v0.0.0-20190707220628-8d4bc4ba7749 h1:bUGsEnyNbVPw06Bs80sCeARAlK8lhwqGyi6UT8ymuGk=
 github.com/shurcooL/httpfs v0.0.0-20190707220628-8d4bc4ba7749/go.mod h1:ZY1cvUeJuFPAdZ/B6v7RHavJWZn2YPVFQ1OSXhCGOkg=
 github.com/spf13/pflag v1.0.5/go.mod h1:McXfInJRrz4CZXVZOBLb0bTZqETkiAhM9Iw0y3An2Bg=

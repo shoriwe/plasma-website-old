@@ -6,7 +6,7 @@ require (
 	github.com/gomarkdown/markdown v0.0.0-20210918233619-6c1113f12c4a
 	github.com/gopherjs/gopherjs v0.0.0-20210923143318-357ed63a84fb
 	github.com/shoriwe/gplasma v0.0.0-20210918222743-b870906766a7
-	github.com/shoriwe/static v0.0.0-20211003181054-f3b36130c96e
+	github.com/shoriwe/static v0.0.0-20211005181959-fb618bbedbe7
 )
 
 require (
