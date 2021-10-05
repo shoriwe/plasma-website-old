@@ -32,9 +32,9 @@
 
 ###### [Interfaces](/documentation/class-interface-interfaces.html)
 
-###### [Super](/documentation/lass-interface-super.html)
+###### [Super](/documentation/class-interface-super.html)
 
-###### [Magic methods](/documentation/lass-interface-magic-methods.html)
+###### [Magic methods](/documentation/class-interface-magic-methods.html)
 
 ## [If/Unless statements](/documentation/if-unless.html)
 
