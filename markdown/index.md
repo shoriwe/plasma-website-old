@@ -17,3 +17,7 @@ end
 
 hello_world()
 ```
+
+## This page is powered by
+
+#### [static](https://github.com/shoriwe/static)
