@@ -2,6 +2,12 @@
 
 Plasma is interpreted dynamic type programming language focused in `Go` application embedding.
 
+## Install gplasma
+
+```shell
+go install github.com/shoriwe/gplasma/cmd/plasma@latest
+```
+
 ## Quick preview
 
 ```ruby

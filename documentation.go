@@ -14,18 +14,6 @@ func renderDocumentation(documentationFileName string, e *engine.Engine) ([]byte
 	if documentationCssGetError != nil {
 		return nil, documentationCssGetError
 	}
-	markdownCssURL, markdownCssGetError := e.AssetURL("vendor/css/github-markdown.css")
-	if markdownCssGetError != nil {
-		return nil, markdownCssGetError
-	}
-	prismCssURL, prismCssGetError := e.AssetURL("vendor/prism/prism.css")
-	if prismCssGetError != nil {
-		return nil, prismCssGetError
-	}
-	prismScriptURL, prismScriptGetError := e.AssetURL("vendor/prism/prism.js")
-	if prismScriptGetError != nil {
-		return nil, prismScriptGetError
-	}
 	tableOfContents, tableOfContentsRenderError := renderMarkdown(e, "markdown/documentation/table-of-contents.md")
 	if tableOfContentsRenderError != nil {
 		return nil, tableOfContentsRenderError
@@ -37,11 +25,8 @@ func renderDocumentation(documentationFileName string, e *engine.Engine) ([]byte
 	return e.RenderTemplate("documentation.html",
 		map[string]string{
 			"DOCUMENTATION_STYLE": documentationCssURL,
-			"MARKDOWN_STYLE":      markdownCssURL,
-			"PRISM_STYLE":         prismCssURL,
 			"TABLE_OF_CONTENTS":   string(tableOfContents),
 			"DOCUMENTATION":       string(documentation),
-			"PRISM_SCRIPT":        prismScriptURL,
 		},
 	)
 }
@@ -56,10 +41,29 @@ func createNewHandler(articleName string) engine.ContentGenerator {
 		if navigationCssGetError != nil {
 			return nil, navigationCssGetError
 		}
+
+		markdownCssURL, markdownCssGetError := e.AssetURL("vendor/css/github-markdown.css")
+		if markdownCssGetError != nil {
+			return nil, markdownCssGetError
+		}
+		prismCssURL, prismCssGetError := e.AssetURL("vendor/prism/prism.css")
+		if prismCssGetError != nil {
+			return nil, prismCssGetError
+		}
+		prismScriptURL, prismScriptGetError := e.AssetURL("vendor/prism/prism.js")
+		if prismScriptGetError != nil {
+			return nil, prismScriptGetError
+		}
+
 		page, pageRenderError := e.RenderTemplate("page.html",
 			map[string]string{
-				"NAV_STYLE": navigationCssURL,
-				"BODY":      string(body),
+				"TITLE":          "Documentation",
+				"NAV_STYLE":      navigationCssURL,
+				"MARKDOWN_STYLE": markdownCssURL,
+				"PRISM_STYLE":    prismCssURL,
+				"BODY":           string(body),
+				"PRISM_JS":       prismScriptURL,
+				"MORE":           "",
 			},
 		)
 		if pageRenderError != nil {

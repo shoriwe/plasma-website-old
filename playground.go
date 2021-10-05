@@ -1,6 +1,10 @@
 package main
 
-import "github.com/shoriwe/static/pkg/engine"
+import (
+	"github.com/shoriwe/static/pkg/engine"
+	"github.com/shoriwe/static/pkg/template"
+	"strings"
+)
 
 func HandlePlayground(e1 *engine.Engine) error {
 	return e1.HandlePath("/playground.html",
@@ -33,15 +37,11 @@ func HandlePlayground(e1 *engine.Engine) error {
 			if playgroundScriptGetError != nil {
 				return nil, playgroundScriptGetError
 			}
+
 			playground, playgroundCompileError := e.RenderTemplate("playground.html",
 				map[string]string{
-					"PLAYGROUND_STYLE":  playgroundCssURL,
-					"MARKDOWN_STYLE":    markdownCssURL,
-					"PRISM_STYLE":       prismCssURL,
-					"PRISM_LIVE_STYLE":  prismLiveCssURL,
-					"PRISM_SCRIPT":      prismScriptURL,
-					"PRISM_LIVE_SCRIPT": prismLiveScriptURL,
-					"PLAYGROUND_SCRIPT": playgroundScriptURL,
+					"PLAYGROUND_STYLE": playgroundCssURL,
+					"PRISM_LIVE_STYLE": prismLiveCssURL,
 				},
 			)
 			if playgroundCompileError != nil {
@@ -51,10 +51,27 @@ func HandlePlayground(e1 *engine.Engine) error {
 			if navigationCssGetError != nil {
 				return nil, navigationCssGetError
 			}
+			moreTemplate := template.NewTemplate(strings.NewReader(
+				`<script src="(( PRISM_LIVE_SCRIPT ))?load=ruby"></script>
+<script src="(( PLAYGROUND_SCRIPT ))"></script>`),
+				map[string]string{
+					"PRISM_LIVE_SCRIPT": prismLiveScriptURL,
+					"PLAYGROUND_SCRIPT": playgroundScriptURL,
+				},
+			)
+			more, moreRenderError := moreTemplate.Compile()
+			if moreRenderError != nil {
+				return nil, moreRenderError
+			}
 			renderPlayground, renderError := e.RenderTemplate("page.html",
 				map[string]string{
-					"NAV_STYLE": navigationCssURL,
-					"BODY":      string(playground),
+					"TITLE":          "Playground",
+					"MARKDOWN_STYLE": markdownCssURL,
+					"PRISM_STYLE":    prismCssURL,
+					"NAV_STYLE":      navigationCssURL,
+					"BODY":           string(playground),
+					"PRISM_JS":       prismScriptURL,
+					"MORE":           string(more),
 				},
 			)
 			if renderError != nil {
