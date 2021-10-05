@@ -291,70 +291,268 @@ left - self
 
 Subtracts the values. Auto called when using the operator `-`.
 
-#### Mul
+#### Mul(right)
 
-#### RightMul
+```ruby
+self * right
+```
 
-#### Div
+Multiplies the values. Auto called when using the operator `*`.
 
-#### RightDiv
+#### RightMul(left)
 
-#### FloorDiv
+```ruby
+left * self
+```
 
-#### RightFloorDiv
+Multiplies the values. Auto called when using the operator `*`.
 
-#### Pow
+#### Div(right)
 
-#### RightPow
+```ruby
+self / right
+```
 
-#### Equals
+Divides the values. Auto called when using the operator `/`.
 
-#### RightEquals
+#### RightDiv(left)
 
-#### NotEquals
+```ruby
+left / self
+```
 
-#### RightNotEquals
+Divides the values. Auto called when using the operator `/`.
 
-#### GreaterThan
+#### FloorDiv(right)
 
-#### RightGreaterThan
+```ruby
+self // right
+```
 
-#### LessThan
+Floor divides the values. Auto called when using the operator `//`.
 
-#### RightLessThan
+#### RightFloorDiv(left)
 
-#### GreaterThanOrEqual
+```ruby
+left // self
+```
 
-#### RightGreaterThanOrEqual
+Floor divides the values. Auto called when using the operator `//`.
 
-#### LessThanOrEqual
+#### Pow(right)
 
-#### RightLessThanOrEqual
+```ruby
+self ** right
+```
+
+Power of the values. Auto called when using the operator `**`.
+
+#### RightPow(left)
+
+```ruby
+left ** self
+```
+
+Power of the values. Auto called when using the operator `**`.
+
+#### Equals(right)
+
+```ruby
+self == right
+```
+
+Equals the values. Auto called when using the operator `==`.
+
+#### RightEquals(left)
+
+```ruby
+left == self
+```
+
+Equals the values. Auto called when using the operator `==`.
+
+#### NotEquals(right)
+
+```ruby
+self != right
+```
+
+Not equals the values. Auto called when using the operator `!=`.
+
+#### RightNotEquals(left)
+
+```ruby
+left != self
+```
+
+Not equals the values. Auto called when using the operator `!=`.
+
+#### GreaterThan(right)
+
+```ruby
+self > right
+```
+
+Greater than of the values. Auto called when using the operator `>`.
+
+#### RightGreaterThan(left)
+
+```ruby
+left > self
+```
+
+Greater than of the values. Auto called when using the operator `>`.
+
+#### LessThan(right)
+
+```ruby
+self < right
+```
+
+Less than of the values. Auto called when using the operator `<`.
+
+#### RightLessThan(left)
+
+```ruby
+left < self
+```
+
+Less than of the values. Auto called when using the operator `<`.
+
+#### GreaterThanOrEqual(right)
+
+```ruby
+self >= right
+```
+
+Greater or equal than of the values. Auto called when using the operator `>=`.
+
+#### RightGreaterThanOrEqual(left)
+
+```ruby
+left >= self
+```
+
+Greater or equal than of the values. Auto called when using the operator `>=`.
+
+#### LessThanOrEqual(right)
+
+```ruby
+self <= right
+```
+
+Less or equal than of the values. Auto called when using the operator `<=`.
+
+#### RightLessThanOrEqual(left)
+
+```ruby
+left <= self
+```
+
+Less or equal than of the values. Auto called when using the operator `<=`.
 
 ## Integer specific
 
-#### Mod
+#### Mod(right)
 
-#### RightMod
+```ruby
+self % right
+```
 
-#### BitXor
+Modulus of the values. Auto called when using the operator `%`.
 
-#### RightBitXor
+#### RightMod(left)
 
-#### BitAnd
+```ruby
+left % self
+```
 
-#### RightBitAnd
+Modulus of the values. Auto called when using the operator `%`.
 
-#### BitOr
+#### BitXor(right)
 
-#### RightBitOr
+```ruby
+self ^ right
+```
 
-#### BitLeft
+Bitwise xor of the values. Auto called when using the operator `^`.
 
-#### RightBitLeft
+#### RightBitXor(left)
 
-#### BitRight
+```ruby
+left ^ self
+```
 
-#### RightBitRight
+Bitwise xor of the values. Auto called when using the operator `^`.
+
+#### BitAnd(right)
+
+```ruby
+self & right
+```
+
+Bitwise and of the values. Auto called when using the operator `&`.
+
+#### RightBitAnd(left)
+
+```ruby
+left & self
+```
+
+Bitwise and of the values. Auto called when using the operator `&`.
+
+#### BitOr(right)
+
+```ruby
+self | right
+```
+
+Bitwise or of the values. Auto called when using the operator `|`.
+
+#### RightBitOr(left)
+
+```ruby
+left | self
+```
+
+Bitwise or of the values. Auto called when using the operator `|`.
+
+#### BitLeft(right)
+
+```ruby
+self << right
+```
+
+Bitwise left of the values. Auto called when using the operator `<<`.
+
+#### RightBitLeft(left)
+
+```ruby
+left << self
+```
+
+Bitwise left of the values. Auto called when using the operator `<<`.
+
+#### BitRight(right)
+
+```ruby
+self >> right
+```
+
+Bitwise right of the values. Auto called when using the operator `>>`.
+
+#### RightBitRight(left)
+
+```ruby
+left >> self
+```
+
+Bitwise right of the values. Auto called when using the operator `>>`.
 
 #### NegateBits
+
+```ruby
+~self
+```
+
+Negate bits of the value. Auto called when using the operator `~`.
