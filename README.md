@@ -1,5 +1,7 @@
 # plasma-website
 
+[https://shoriwe.github.io](https://shoriwe.github.io)
+
 Static web page generator for the `gplasma` documentation.
 
 ## Powered by
