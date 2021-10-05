@@ -2,6 +2,10 @@
 
 Static web page generator for the `gplasma` documentation.
 
+## Powered by
+
+[static](https://github.com/shoriwe/static)
+
 ### Build
 
 ```shell
