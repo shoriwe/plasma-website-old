@@ -1,4 +1,6 @@
 .playground-container {
+    height: 0;
+    max-height: 100vh;
     width: 100%;
     display: flex;
     flex-direction: row;
@@ -6,7 +8,10 @@
 }
 
 .playground-part {
-    width: 100%;
+    height: 0;
+    max-height: 100vh;
+    width: 50vw;
+    max-width: 50vw;
     padding: 2.5vh 2.5vw;
 }
 
