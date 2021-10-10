@@ -10,8 +10,28 @@ type Output struct {
 }
 
 func (o *Output) Write(p []byte) (n int, err error) {
-	o.target.Set("textContent", o.target.Get("textContent").String()+string(p))
-	return len(p), nil
+	// split in multiple lines
+	var toWrite []byte
+	numberOfCharacterPerLine := js.Global.Get("document").Get("body").Get("clientWidth").Int() * 100 / 1904
+	currentLineLength := 0
+	for _, character := range p {
+		switch character {
+		case '\n':
+			toWrite = append(toWrite, character)
+			currentLineLength = 0
+		default:
+			// How much is too much
+			if currentLineLength == numberOfCharacterPerLine {
+				toWrite = append(toWrite, '\n', character)
+				currentLineLength = 1
+			} else {
+				currentLineLength += 1
+				toWrite = append(toWrite, character)
+			}
+		}
+	}
+	o.target.Set("textContent", o.target.Get("textContent").String()+string(toWrite))
+	return len(toWrite), nil
 }
 
 func NewOutput() *Output {
