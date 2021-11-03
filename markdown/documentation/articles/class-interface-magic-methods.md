@@ -231,6 +231,16 @@ self[index] = value
 
 Puts the `value` at the end of the array.
 
+#### Pop
+
+Returns the last element and remove it from the array.
+
+## String, Bytes, Array, Tuple and Hash specific
+
+#### Length()
+
+Returns the length of the object.
+
 ## String and Bytes specific
 
 #### Lower()

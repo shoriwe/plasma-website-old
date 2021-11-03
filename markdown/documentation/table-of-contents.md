@@ -62,4 +62,18 @@
 
 ## [Pass](/documentation/pass.html)
 
+# [Features](/documentation/features.html)
+
+###### [Import system](/documentation/features-import-system.html)
+
+###### [ObjectLoaders](/documentation/features-object-loader.html)
+
 # [Embedding](/documentation/embedding.html)
+
+# [Standard library](/documentation/stdlib.html)
+
+###### [regexp](/documentation/stdlib-regexp.html)
+
+###### [json](/documentation/stdlib-json.html)
+
+###### [base64](/documentation/stdlib-base64.html)
