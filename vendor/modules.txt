@@ -32,7 +32,7 @@ github.com/neelance/astrewrite
 # github.com/neelance/sourcemap v0.0.0-20200213170602-2833bce08e4c
 ## explicit
 github.com/neelance/sourcemap
-# github.com/shoriwe/gplasma v0.0.0-20211005183640-a7ae91542302
+# github.com/shoriwe/gplasma v0.0.0-20211103070337-347bfcd57a67
 ## explicit; go 1.16
 github.com/shoriwe/gplasma
 github.com/shoriwe/gplasma/pkg/compiler/ast

@@ -41,6 +41,8 @@ github.com/shoriwe/gplasma v0.0.0-20210918222743-b870906766a7 h1:Hme9A5ltkhesEp2
 github.com/shoriwe/gplasma v0.0.0-20210918222743-b870906766a7/go.mod h1:4Wd1xurUfcdcoJVhu++BCj4N8bfCp1hwlR+TEmqz6TA=
 github.com/shoriwe/gplasma v0.0.0-20211005183640-a7ae91542302 h1:75l1iwVHFjpAE1pmrTSpVPFfniEZaXOxEkya/1ebFzs=
 github.com/shoriwe/gplasma v0.0.0-20211005183640-a7ae91542302/go.mod h1:4Wd1xurUfcdcoJVhu++BCj4N8bfCp1hwlR+TEmqz6TA=
+github.com/shoriwe/gplasma v0.0.0-20211103070337-347bfcd57a67 h1:T2K23Kb62Q6LXxH3s/3ymfvXkKJjORpRxaaEooKW1Ok=
+github.com/shoriwe/gplasma v0.0.0-20211103070337-347bfcd57a67/go.mod h1:4Wd1xurUfcdcoJVhu++BCj4N8bfCp1hwlR+TEmqz6TA=
 github.com/shoriwe/static v0.0.0-20211001180818-97868ca58c88 h1:3Mx5eVwu2+nFkNsBswYJJUKURkipwEB7b4Z6+I2o7Lk=
 github.com/shoriwe/static v0.0.0-20211001180818-97868ca58c88/go.mod h1:28Qs6TkTeRYMDd7Vipetea6LKl1j+fcDA4rBEzBWhAU=
 github.com/shoriwe/static v0.0.0-20211003181054-f3b36130c96e h1:kqXG3fJz54su2ziOUj7RqDDPeMEo420VsCAnymlsFOg=
