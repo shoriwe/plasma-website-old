@@ -1,6 +1,7 @@
 # What is plasma
 
-**[Plasma](https://github.com/shoriwe/gplasma)** is interpreted dynamic type programming language focused in `Go` application embedding.
+**[Plasma](https://github.com/shoriwe/gplasma)** is interpreted dynamic type programming language focused in `Go`
+application embedding.
 
 ## Install gplasma
 
