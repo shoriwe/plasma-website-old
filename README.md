@@ -1,6 +1,6 @@
 # plasma-website
 
-[https://shoriwe.github.io](https://shoriwe.github.io)
+[https://shoriwe.github.io/plasma/index.html](https://shoriwe.github.io/plasma/index.html)
 
 Static web page generator for the `gplasma` documentation.
 
