@@ -1,4 +1,4 @@
 # Table of contents
 
-- [Types](/documentation/built-in-types.html)
-- [Functions](/documentation/built-in-functions.html)
+- [Types](/plasma/documentation/built-in-types.html)
+- [Functions](/plasma/documentation/built-in-functions.html)

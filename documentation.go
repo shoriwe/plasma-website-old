@@ -80,7 +80,7 @@ func HandleDocumentation(e1 *engine.Engine) error {
 	for _, article := range articles {
 		_, file := path.Split(article.Name())
 		fileSplit := strings.Split(file, ".")
-		toHandlePath := fmt.Sprintf("/documentation/%s.html", fileSplit[0])
+		toHandlePath := fmt.Sprintf("/plasma/documentation/%s.html", fileSplit[0])
 		handlePathError := e1.HandlePath(toHandlePath, createNewHandler(article.Name()))
 		if handlePathError != nil {
 			return handlePathError

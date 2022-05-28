@@ -7,7 +7,7 @@ import (
 )
 
 func HandlePlayground(e1 *engine.Engine) error {
-	return e1.HandlePath("/playground.html",
+	return e1.HandlePath("/plasma/playground.html",
 		func(e *engine.Engine) ([]byte, error) {
 			playgroundCssURL, playgroundCssGetError := e.AssetURL("css/playground.css")
 			if playgroundCssGetError != nil {

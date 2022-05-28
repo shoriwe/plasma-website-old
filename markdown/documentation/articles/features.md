@@ -43,11 +43,11 @@ func main() {
 
 ## Built-in features
 
-- [Import system](/documentation/features-import-system.html)
+- [Import system](/plasma/documentation/features-import-system.html)
 
 ## Writing your own features
 
-A feature is just a hash map of strings and [ObjectLoaders](/documentation/features-object-loader.html). Where after
+A feature is just a hash map of strings and [ObjectLoaders](/plasma/documentation/features-object-loader.html). Where after
 executing the **`ObjectLoader`**, it assigns its result to the name specified by the string in the virtual machine
 master namespace.
 

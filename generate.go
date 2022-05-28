@@ -30,11 +30,11 @@ func main() {
 	if loadingError != nil {
 		HandleError(loadingError)
 	}
-	scripts, loadingError = engine.LoadScripts("scripts", "js")
+	scripts, loadingError = engine.LoadScripts("scripts", "plasma/js")
 	if loadingError != nil {
 		HandleError(loadingError)
 	}
-	assets, loadingError = engine.LoadAssets("assets", "static")
+	assets, loadingError = engine.LoadAssets("assets", "plasma/static")
 	if loadingError != nil {
 		HandleError(loadingError)
 	}

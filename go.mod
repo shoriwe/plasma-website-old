@@ -5,7 +5,7 @@ go 1.17
 require (
 	github.com/gomarkdown/markdown v0.0.0-20210918233619-6c1113f12c4a
 	github.com/gopherjs/gopherjs v0.0.0-20210923143318-357ed63a84fb
-	github.com/shoriwe/gplasma v0.0.0-20211103070337-347bfcd57a67
+	github.com/shoriwe/gplasma v0.0.0-20220517214355-8a4aa6af9004
 	github.com/shoriwe/static v0.0.0-20211005181959-fb618bbedbe7
 )
 

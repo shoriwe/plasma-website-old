@@ -1,4 +1,4 @@
 # Table of contents
 
-- [If](/documentation/if-unless-if.html)
-- [Unless](/documentation/if-unless-unless.html)
+- [If](/plasma/documentation/if-unless-if.html)
+- [Unless](/plasma/documentation/if-unless-unless.html)

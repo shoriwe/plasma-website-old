@@ -3,7 +3,7 @@ package main
 import "github.com/shoriwe/static/pkg/engine"
 
 func HandleHome(e1 *engine.Engine) error {
-	return e1.HandlePath("/index.html",
+	return e1.HandlePath("/plasma/index.html",
 		func(e *engine.Engine) ([]byte, error) {
 			index, indexCompileError := renderMarkdown("markdown/index.md")
 			if indexCompileError != nil {

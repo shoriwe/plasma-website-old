@@ -2,6 +2,6 @@
 
 Pre-implemented modules for the language.
 
-- [regexp](/documentation/stdlib-regexp.html)
-- [base64](/documentation/stdlib-base64.html)
-- [json](/documentation/stdlib-json.html)
+- [regexp](/plasma/documentation/stdlib-regexp.html)
+- [base64](/plasma/documentation/stdlib-base64.html)
+- [json](/plasma/documentation/stdlib-json.html)

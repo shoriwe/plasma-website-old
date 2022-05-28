@@ -1,79 +1,79 @@
-# [Start](/documentation/docs.html)
+# [Start](/plasma/documentation/docs.html)
 
-# [Language](/documentation/language.html)
+# [Language](/plasma/documentation/language.html)
 
-## [Built-In](/documentation/built-in.html)
+## [Built-In](/plasma/documentation/built-in.html)
 
-###### [Types](/documentation/built-in-types.html)
+###### [Types](/plasma/documentation/built-in-types.html)
 
-###### [Functions](/documentation/built-in-functions.html)
+###### [Functions](/plasma/documentation/built-in-functions.html)
 
-## [Operators](/documentation/operators.html)
+## [Operators](/plasma/documentation/operators.html)
 
-## [Indexing](/documentation/indexing.html)
+## [Indexing](/plasma/documentation/indexing.html)
 
-## [Name selectors](/documentation/name-selectors.html)
+## [Name selectors](/plasma/documentation/name-selectors.html)
 
-## [Generators](/documentation/generators.html)
+## [Generators](/plasma/documentation/generators.html)
 
-## [Function definitions](/documentation/function-definitions.html)
+## [Function definitions](/plasma/documentation/function-definitions.html)
 
-###### [Named functions](/documentation/function-definitions-named-functions.html)
+###### [Named functions](/plasma/documentation/function-definitions-named-functions.html)
 
-###### [Lambda functions](/documentation/function-definitions-lambda-functions.html)
+###### [Lambda functions](/plasma/documentation/function-definitions-lambda-functions.html)
 
-## [Assign](/documentation/assign.html)
+## [Assign](/plasma/documentation/assign.html)
 
-## [Module](/documentation/module.html)
+## [Module](/plasma/documentation/module.html)
 
-## [Class and Interface definitions](/documentation/class-interface.html)
+## [Class and Interface definitions](/plasma/documentation/class-interface.html)
 
-###### [Classes](/documentation/class-interface-classes.html)
+###### [Classes](/plasma/documentation/class-interface-classes.html)
 
-###### [Interfaces](/documentation/class-interface-interfaces.html)
+###### [Interfaces](/plasma/documentation/class-interface-interfaces.html)
 
-###### [Super](/documentation/class-interface-super.html)
+###### [Super](/plasma/documentation/class-interface-super.html)
 
-###### [Magic methods](/documentation/class-interface-magic-methods.html)
+###### [Magic methods](/plasma/documentation/class-interface-magic-methods.html)
 
-## [If/Unless statements](/documentation/if-unless.html)
+## [If/Unless statements](/plasma/documentation/if-unless.html)
 
-###### [If](/documentation/if-unless-if.html)
+###### [If](/plasma/documentation/if-unless-if.html)
 
-###### [Unless](/documentation/if-unless-unless.html)
+###### [Unless](/plasma/documentation/if-unless-unless.html)
 
-## [Switch](/documentation/switch.html)
+## [Switch](/plasma/documentation/switch.html)
 
-## [Loops](/documentation/loops.html)
+## [Loops](/plasma/documentation/loops.html)
 
-###### [Do-While](/documentation/loops-do-while.html)
+###### [Do-While](/plasma/documentation/loops-do-while.html)
 
-###### [While](/documentation/loops-while.html)
+###### [While](/plasma/documentation/loops-while.html)
 
-###### [Until](/documentation/loops-until.html)
+###### [Until](/plasma/documentation/loops-until.html)
 
-###### [For](/documentation/loops-for.html)
+###### [For](/plasma/documentation/loops-for.html)
 
-###### [Special Keyboards](/documentation/loops-special-keyboards.html) -- [Break](/documentation/loops-special-keyboards-break.html) -- [Continue](/documentation/loops-special-keyboards-continue.html) -- [Redo](/documentation/loops-special-keyboards-redo.html)
+###### [Special Keyboards](/plasma/documentation/loops-special-keyboards.html) -- [Break](/plasma/documentation/loops-special-keyboards-break.html) -- [Continue](/plasma/documentation/loops-special-keyboards-continue.html) -- [Redo](/plasma/documentation/loops-special-keyboards-redo.html)
 
-## [Begin](/documentation/begin.html)
+## [Begin](/plasma/documentation/begin.html)
 
-## [End](/documentation/end.html)
+## [End](/plasma/documentation/end.html)
 
-## [Pass](/documentation/pass.html)
+## [Pass](/plasma/documentation/pass.html)
 
-# [Features](/documentation/features.html)
+# [Features](/plasma/documentation/features.html)
 
-###### [Import system](/documentation/features-import-system.html)
+###### [Import system](/plasma/documentation/features-import-system.html)
 
-###### [ObjectLoaders](/documentation/features-object-loader.html)
+###### [ObjectLoaders](/plasma/documentation/features-object-loader.html)
 
-# [Embedding](/documentation/embedding.html)
+# [Embedding](/plasma/documentation/embedding.html)
 
-# [Standard library](/documentation/stdlib.html)
+# [Standard library](/plasma/documentation/stdlib.html)
 
-###### [regexp](/documentation/stdlib-regexp.html)
+###### [regexp](/plasma/documentation/stdlib-regexp.html)
 
-###### [json](/documentation/stdlib-json.html)
+###### [json](/plasma/documentation/stdlib-json.html)
 
-###### [base64](/documentation/stdlib-base64.html)
+###### [base64](/plasma/documentation/stdlib-base64.html)
