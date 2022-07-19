@@ -1,6 +1,7 @@
 package templates
 
 import (
+	"bytes"
 	_ "embed"
 	"html/template"
 	"io"
@@ -21,5 +22,13 @@ func Render(p Page, w io.Writer) error {
 	if parseError != nil {
 		return parseError
 	}
-	return pageTemplate.Execute(w, p)
+	buffer := bytes.NewBuffer(nil)
+	executeError := pageTemplate.Execute(buffer, p)
+	if executeError != nil {
+		return executeError
+	}
+	newBody := bytes.ReplaceAll(buffer.Bytes(), []byte(`href="/`), []byte(`href="/plasma/`))
+	newBody = bytes.ReplaceAll(newBody, []byte(`src="/`), []byte(`src="/plasma/`))
+	_, writeError := w.Write(newBody)
+	return writeError
 }
