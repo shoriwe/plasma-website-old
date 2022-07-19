@@ -1,26 +1,25 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <link href="(( NAV_STYLE ))" rel="stylesheet">
-    <link href="(( MARKDOWN_STYLE ))" rel="stylesheet">
-    <link href="(( PRISM_STYLE ))" rel="stylesheet">
+    <link href="/static/vendoring/css/github-markdown.css" rel="stylesheet">
+    <link href="/static/vendoring/prism-material-light.css" rel="stylesheet">
+    <link href="/static/vendoring/prism/prism-live.css" rel="stylesheet">
+    <link href="/static/css/app.css" rel="stylesheet">
     <meta charset="UTF-8">
-    <title>(( TITLE ))</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{ .Title }}</title>
 </head>
 <body>
 
-<div class="navigation-bar">
-    <a class="base-button plasma-title">Plasma</a>
-    <a class="base-button blue-button" href="/plasma/index.html">Home</a>
-    <a class="base-button green-button" href="/plasma/playground.html">Playground</a>
-    <a class="base-button purple-button" href="/plasma/documentation/docs.html">Documentation</a>
+<div class="contents">
+    <div class="header">
+        <a class="base-button header-button" href="/index.html">Home</a>
+        <a class="base-button header-button" href="/playground.html">Playground</a>
+        <a class="base-button header-button" href="/docs.html">Documentation</a>
+    </div>
+    {{ .Body }}
 </div>
-
-<div class="body-div">
-    (( BODY ))
-</div>
-<script src="(( PRISM_JS ))"></script>
-(( MORE ))
+<script src="/static/vendoring/prism/prism.js"></script>
+<script src="/static/vendoring/prism/prism-live.js"></script>
 </body>
-
 </html>
