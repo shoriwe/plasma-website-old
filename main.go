@@ -1,7 +1,6 @@
 package main
 
 import (
-	"fmt"
 	"github.com/shoriwe/plasma-website/articles"
 	"github.com/shoriwe/plasma-website/home"
 	"github.com/shoriwe/plasma-website/playground"
@@ -16,11 +15,7 @@ var (
 )
 
 func init() {
-	if len(os.Args) != 2 {
-		_, _ = fmt.Fprintf(os.Stderr, "Usage: %s OUTPUT_DIRECTORY", os.Args[0])
-		os.Exit(0)
-	}
-	output = afero.NewBasePathFs(afero.NewOsFs(), os.Args[1])
+	output = afero.NewBasePathFs(afero.NewOsFs(), "www/plasma")
 }
 
 func main() {
