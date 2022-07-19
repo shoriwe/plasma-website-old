@@ -1,0 +1,18 @@
+<article class="markdown-body">
+    <div id="index-readme">
+    </div>
+</article>
+<script>
+    fetch('https://raw.githubusercontent.com/shoriwe/gplasma/main/README.md')
+        .then(
+            response => response.text()
+        )
+        .then(
+            body => {
+                const readme = document.getElementById('index-readme');
+                const conv = new showdown.Converter();
+                readme.innerHTML = conv.makeHtml(body);
+                Prism.highlightAll();
+            }
+        );
+</script>
