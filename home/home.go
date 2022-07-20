@@ -21,5 +21,6 @@ func Write(output afero.Fs) error {
 			Title: "Home",
 			Body:  script,
 		},
-		file)
+		file,
+	)
 }

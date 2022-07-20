@@ -14,12 +14,16 @@ var (
 	output afero.Fs
 )
 
+const (
+	targetDirectory = "www/plasma"
+)
+
 func init() {
-	output = afero.NewBasePathFs(afero.NewOsFs(), "www/plasma")
+	output = afero.NewBasePathFs(afero.NewOsFs(), targetDirectory)
 }
 
 func main() {
-	_ = os.RemoveAll(os.Args[1])
+	_ = os.RemoveAll(targetDirectory)
 	writeStaticError := static.Write(output)
 	if writeStaticError != nil {
 		log.Fatal(writeStaticError)

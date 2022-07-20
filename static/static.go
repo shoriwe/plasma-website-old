@@ -13,6 +13,8 @@ var (
 	css embed.FS
 	//go:embed vendoring
 	vendoring embed.FS
+	//go:embed wasm
+	wasm embed.FS
 )
 
 const (
@@ -46,5 +48,9 @@ func Write(output afero.Fs) error {
 	if writeToOutError != nil {
 		return writeToOutError
 	}
-	return fs.WalkDir(vendoring, ".", walkFunc(afero.NewBasePathFs(output, Path), vendoring))
+	writeToOutError = fs.WalkDir(vendoring, ".", walkFunc(afero.NewBasePathFs(output, Path), vendoring))
+	if writeToOutError != nil {
+		return writeToOutError
+	}
+	return fs.WalkDir(wasm, ".", walkFunc(afero.NewBasePathFs(output, Path), wasm))
 }
