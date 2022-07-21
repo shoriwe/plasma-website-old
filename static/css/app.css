@@ -1,13 +1,11 @@
 .header {
     display: flex;
-    width: 100%;
-    background: #5A49E3;
     margin-bottom: 2vh;
 }
 
 .header-button {
     font-family: Arial, serif;
-    background: #5A49E3;
+    background: #7d5fff;
     color: white;
     text-decoration: none;
     padding: 1vh 1vw;
