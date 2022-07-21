@@ -1,7 +1,7 @@
 package main
 
 import (
-	"github.com/shoriwe/plasma-website/articles"
+	"github.com/shoriwe/plasma-website/docs"
 	"github.com/shoriwe/plasma-website/home"
 	"github.com/shoriwe/plasma-website/playground"
 	"github.com/shoriwe/plasma-website/static"
@@ -28,7 +28,7 @@ func main() {
 	if writeStaticError != nil {
 		log.Fatal(writeStaticError)
 	}
-	writeDocumentationError := articles.Write(output)
+	writeDocumentationError := docs.Write(output)
 	if writeDocumentationError != nil {
 		log.Fatal(writeDocumentationError)
 	}

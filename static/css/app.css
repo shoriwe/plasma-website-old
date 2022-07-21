@@ -64,3 +64,49 @@
 .red-button:hover {
     background: #c23616;
 }
+
+.documentation {
+    display: flex;
+    width: 100%;
+}
+
+.documentation-buttons {
+    text-align: center;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+    margin-right: 5%;
+    width: 30%;
+}
+
+.documentation-buttons:hover {
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+
+.documentation-buttons button {
+    margin: 2vh auto;
+    font-family: Arial, serif;
+    font-size: large;
+    width: 90%;
+    border-radius: 2px;
+    display: block;
+    border: none;
+}
+
+.doc-article {
+    width: 85%;
+}
+
+.pressed-button {
+    color: white;
+    background: #7158e2;
+}
+
+.unpressed-button {
+    color: black;
+    background: none;
+}
+
+.unpressed-button:hover {
+    color: white;
+    background: #7d5fff;
+}
