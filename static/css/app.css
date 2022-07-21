@@ -3,15 +3,16 @@
     margin-bottom: 2vh;
 }
 
-.header-button {
+.purple-button {
     font-family: Arial, serif;
     background: #7d5fff;
+    border: none;
     color: white;
     text-decoration: none;
     padding: 1vh 1vw;
 }
 
-.header-button:hover {
+.purple-button:hover {
     background: #7158e2;
 }
 
@@ -74,8 +75,8 @@
     text-align: center;
     box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
     transition: 0.3s;
-    margin-right: 5%;
-    width: 30%;
+    width: 100%;
+    overflow: auto;
 }
 
 .documentation-buttons:hover {
@@ -86,7 +87,7 @@
     margin: 2vh auto;
     font-family: Arial, serif;
     font-size: large;
-    width: 90%;
+    width: 70%;
     border-radius: 2px;
     display: block;
     border: none;

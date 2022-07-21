@@ -8,6 +8,20 @@ const requestInit = {
     headers: myHeaders,
 };
 
+function toggleMenu(id) {
+    const button = document.getElementById(id);
+    const buttons = document.getElementById('docs-buttons');
+    const article = document.getElementById('docs-article');
+    if (button.innerText === "Open") {
+        button.innerText = 'Close';
+        buttons.style.width = '50%';
+        article.style.width = '50%';
+    } else {
+        button.innerText = 'Open';
+        buttons.style.width = '20%';
+        article.style.width = '80%';
+    }
+}
 
 function pressButton(button) {
     button.classList.remove("unpressed-button");
